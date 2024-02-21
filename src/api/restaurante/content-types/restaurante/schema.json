@@ -4,7 +4,8 @@
   "info": {
     "singularName": "restaurante",
     "pluralName": "restaurantes",
-    "displayName": "Restaurante"
+    "displayName": "Restaurante",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,6 +25,14 @@
       "relation": "manyToMany",
       "target": "api::categoria.categoria",
       "mappedBy": "restaurantes"
+    },
+    "imagem": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

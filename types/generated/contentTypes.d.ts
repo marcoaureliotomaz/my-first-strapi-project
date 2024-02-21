@@ -403,6 +403,7 @@ export interface ApiRestauranteRestaurante extends Schema.CollectionType {
     singularName: 'restaurante';
     pluralName: 'restaurantes';
     displayName: 'Restaurante';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -415,6 +416,7 @@ export interface ApiRestauranteRestaurante extends Schema.CollectionType {
       'manyToMany',
       'api::categoria.categoria'
     >;
+    imagem: Attribute.Media & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
